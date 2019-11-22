@@ -5,7 +5,19 @@ public class Main {
         int rollDice = 0;
         
         while (rollDice != 6){
-            rollDice = (int) (Math.ran
+            rollDice = (int) (Math.random() * 6 + 1);
+            System.out.println("You rolled: " + rollDice);
+            
+            if(rollDice == 3) {
+                break;
+            }
+        }
+        if(rollDice == 6){
+            System.out.println("You Win!!!");
+        } else {
+            System.out.println("You lose");
+        }
+    }
         
     public static void main(String[] args) {
         for(int i=0; i<3; i++){
@@ -14,5 +26,6 @@ public class Main {
                 System.out.println("\tInner Loop " + j + ": Hi Everyone!");
             }
         }
+        rollASix();
     }
 }

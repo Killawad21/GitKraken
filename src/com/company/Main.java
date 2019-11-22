@@ -19,6 +19,22 @@ public class Main {
             System.out.println("You lose");
         }
     }
+    public static void chorus() //this is defining chorus as multiple lines of code
+	{
+	    System.out.println("Once I had a love and it was a gas");
+	    System.out.println("Soon found out had a heart of glass");
+	    System.out.println("Seemed like the real thing, only to find");
+	    System.out.println("Mucho mistrust, love's gone behind");
+	    System.out.println("                                  ");
+	    System.out.println("Once I had a love and it was divine");
+	    System.out.println("Soon found out I was losing my mind");
+	    System.out.println("                                  ");
+	    System.out.println("...");
+	    System.out.println("Once I had a love and it was a gas");
+	    System.out.println("Soon found out had a heart of glass");
+	    System.out.println("Seemed like the real thing, only to find");
+	    System.out.println("Mucho mistrust, love's gone behind");
+	}
     public static void countBlocks(int levels) {
         int total = 0;
         for (int i = 1; i <= levels; i++) {
@@ -33,7 +49,7 @@ public class Main {
                 System.out.println("\tInner Loop " + j + ": Hi Everyone!");
             }
         }
-
+        chorus();
         rollASix();
         countBlocks(10);
     }
